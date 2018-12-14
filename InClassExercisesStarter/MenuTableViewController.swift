@@ -10,7 +10,7 @@ import UIKit
 
 class MenuTableViewController: UITableViewController {
 
-    var items = ["Restaurant Map", "Make a Reservation","Show Reservation"]
+    var items = ["Where's my Advisor", "Make an appointment", "Check Appointments"]
     /*Restaurant Map
      Make a Reservation
      Show Reservation
@@ -49,13 +49,13 @@ class MenuTableViewController: UITableViewController {
         print("Person clicked in row number: \(i)")
         
         if (i == 0) {
-            performSegue(withIdentifier: "segueRestaurantMap", sender: nil)
+            performSegue(withIdentifier: "segueAdvisorMap", sender: nil)
         }
         if (i == 1) {
-            performSegue(withIdentifier: "segueMakeReservation", sender: nil)
+            performSegue(withIdentifier: "segueMakeAnAppointment", sender: nil)
         }
         if (i == 2) {
-            performSegue(withIdentifier: "segueShowReservation", sender: nil)
+            performSegue(withIdentifier: "segueShowAppointments", sender: nil)
         }
         
     }

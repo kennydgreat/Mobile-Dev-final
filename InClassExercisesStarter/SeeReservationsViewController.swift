@@ -29,6 +29,40 @@ class SeeReservationsViewController: UIViewController {
         let settings = db.settings
         settings.areTimestampsInSnapshotsEnabled = true
         db.settings = settings
+        
+         let songsRef = db.collection("advisors")
+        songsRef.getDocuments() {
+            (snapshot, error) in
+            
+            if (error != nil) {
+                print("Error getting results from query")
+            }
+            else {
+                print("Got something!")
+                print("Num items in database matching query: \(snapshot!.count)")
+                
+                // 1. Get one result from database
+                let results = snapshot!.documents
+                let data = results[0].data()
+               // print(data["link"]!)
+              
+                
+                //self.webView.load(req)
+                
+                
+                var reservations:String = ""
+                 // Loop through all the results
+                 for document in snapshot!.documents {
+                    var x = document.data()
+                    print(x["name"]!)
+                    reservations.append("\(x["name"]!) \n")
+                    reservations.append("\(x["day"]!) \n")
+                    reservations.append("\n")
+                 }
+                self.textField.text = reservations
+            }
+        }
+    
     }
 
     override func didReceiveMemoryWarning() {

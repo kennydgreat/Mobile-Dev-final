@@ -15,7 +15,6 @@ class MakeReservationViewController: UIViewController {
     // MARK: Outlets
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var dayTextField: UITextField!
-    @IBOutlet weak var seatsTextField: UITextField!
     
     // Mark: Firestore variables
     var db:Firestore!
@@ -41,6 +40,13 @@ class MakeReservationViewController: UIViewController {
     // MARK: Actions
     @IBAction func buttonPressed(_ sender: Any) {
         print("pressed the button")
+        let advisorsRef = db.collection("advisors")
+        
+        advisorsRef.document().setData([
+            "name": "\(nameTextField.text!)",
+            "day": "\(dayTextField.text!)"
+            ])
+       
     }
     
     

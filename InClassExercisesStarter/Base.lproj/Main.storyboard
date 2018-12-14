@@ -187,7 +187,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[Put success + error messages here]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufh-rV-Yoh">
-                                <rect key="frame" x="11" y="250" width="355" height="90"/>
+                                <rect key="frame" x="16" y="288" width="355" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -233,19 +233,19 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="YJd-aH-F1Y" kind="show" identifier="segueMakeReservation" id="ar9-uN-koG"/>
-                        <segue destination="q5P-2D-QqU" kind="show" identifier="segueRestaurantMap" id="G9n-eB-Fau"/>
-                        <segue destination="CfV-n3-lH4" kind="show" identifier="segueShowReservation" id="yKc-5H-y0k"/>
+                        <segue destination="YJd-aH-F1Y" kind="show" identifier="segueMakeAnAppointment" id="ar9-uN-koG"/>
+                        <segue destination="q5P-2D-QqU" kind="show" identifier="segueAdvisorMap" id="G9n-eB-Fau"/>
+                        <segue destination="CfV-n3-lH4" kind="show" identifier="segueShowAppointments" id="yKc-5H-y0k"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fSU-kd-OpR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1064.8" y="3586.9565217391305"/>
         </scene>
-        <!--See Reservations View Controller-->
+        <!--Check Appointments-->
         <scene sceneID="7lv-L6-3Lb">
             <objects>
-                <viewController id="CfV-n3-lH4" customClass="SeeReservationsViewController" customModule="InClassExercisesStarter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Check Appointments" id="CfV-n3-lH4" customClass="SeeReservationsViewController" customModule="InClassExercisesStarter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bGh-iP-Y2k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,10 +276,10 @@
             </objects>
             <point key="canvasLocation" x="2047" y="4584"/>
         </scene>
-        <!--Make A Reservation-->
+        <!--Make an Appointment-->
         <scene sceneID="z5Z-JE-WjR">
             <objects>
-                <viewController title="Make A Reservation" id="YJd-aH-F1Y" customClass="MakeReservationViewController" customModule="InClassExercisesStarter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Make an Appointment" id="YJd-aH-F1Y" customClass="MakeReservationViewController" customModule="InClassExercisesStarter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v47-2r-I6R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -291,22 +291,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqj-eB-te3">
-                                <rect key="frame" x="16" y="197" width="29.5" height="20.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mC8-Zl-5m8">
-                                <rect key="frame" x="16" y="296" width="314" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number of Seats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8de-Sw-4bO">
-                                <rect key="frame" x="16" y="268" width="129" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Day Requested" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqj-eB-te3">
+                                <rect key="frame" x="16" y="197" width="116" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -320,10 +306,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gW-Jf-rOm">
-                                <rect key="frame" x="16" y="343" width="122" height="30"/>
+                                <rect key="frame" x="57" y="343" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Make Reservation"/>
+                                <state key="normal" title="Book!"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YJd-aH-F1Y" eventType="touchUpInside" id="bY5-1d-ROM"/>
                                 </connections>
@@ -342,8 +328,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJb-xQ-7fI">
-                                <rect key="frame" x="16" y="105" width="133" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Advisor Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJb-xQ-7fI">
+                                <rect key="frame" x="16" y="105" width="107" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -356,17 +342,16 @@
                     <connections>
                         <outlet property="dayTextField" destination="539-rX-3Nn" id="IYj-n9-te6"/>
                         <outlet property="nameTextField" destination="BR8-88-JU2" id="1mn-Gk-JaX"/>
-                        <outlet property="seatsTextField" destination="mC8-Zl-5m8" id="qf9-go-kQ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M3X-A6-y4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2071" y="3909"/>
         </scene>
-        <!--Resataurant Map-->
+        <!--Advisor Map-->
         <scene sceneID="hHs-nK-UoF">
             <objects>
-                <viewController title="Resataurant Map" id="q5P-2D-QqU" customClass="RestaurantMapViewController" customModule="InClassExercisesStarter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Advisor Map" id="q5P-2D-QqU" customClass="WhereIsMyAdvisorViewController" customModule="InClassExercisesStarter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BQc-b5-5JC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -404,9 +389,30 @@
                                 </connections>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JQU-z2-65G">
-                                <rect key="frame" x="10" y="165" width="355" height="482"/>
+                                <rect key="frame" x="10" y="165" width="355" height="319"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance to Professor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE4-AZ-jcH">
+                                <rect key="frame" x="16" y="506" width="245" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Javaad S: 2km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuU-zT-eGU">
+                                <rect key="frame" x="10" y="593" width="245" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ed S: 3km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQK-gL-Gs9">
+                                <rect key="frame" x="16" y="543" width="245" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="c4r-Yo-Ju1"/>

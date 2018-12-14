@@ -12,7 +12,7 @@ import SwiftyJSON
 import MapKit
 import Firebase
 
-class RestaurantMapViewController: UIViewController {
+class WhereIsMyAdvisorViewController: UIViewController {
 
     // MARK: Outlets
     @IBOutlet weak var mapView: MKMapView!
@@ -20,8 +20,8 @@ class RestaurantMapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let URL = "https://opentable.herokuapp.com/api/restaurants?city=Toronto&per_page=5"
-        
+        let URL = "https://myawesomeproject-ded96.firebaseio.com/college.json"
+       
         // ALAMOFIRE function: get the data from the website
         Alamofire.request(URL, method: .get, parameters: nil).responseJSON {
             (response) in
@@ -68,13 +68,25 @@ class RestaurantMapViewController: UIViewController {
     @IBAction func zoomInPressed(_ sender: Any) {
         
         print("zoom in!")
+        var r = mapView.region
         
+        print("Current zoom: \(r.span.latitudeDelta)")
+        
+        r.span.latitudeDelta = r.span.latitudeDelta / 2
+        r.span.longitudeDelta = r.span.longitudeDelta / 2
+        print("New zoom: \(r.span.latitudeDelta)")
+        print("-=------")
+        self.mapView.setRegion(r, animated: true)
         // HINT: Check MapExamples/ViewController.swift
     }
     
     @IBAction func zoomOutPressed(_ sender: Any) {
         // zoom out
         print("zoom out!")
+        var r = mapView.region
+        r.span.latitudeDelta = r.span.latitudeDelta * 2
+        r.span.longitudeDelta = r.span.longitudeDelta * 2
+        self.mapView.setRegion(r, animated: true)
         
         // HINT: Check MapExamples/ViewController.swift
     }

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		054C0C2D21A6E1DD005E8DE5 /* SeeReservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C0C2C21A6E1DD005E8DE5 /* SeeReservationsViewController.swift */; };
-		054C0C2F21A6E287005E8DE5 /* RestaurantMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C0C2E21A6E287005E8DE5 /* RestaurantMapViewController.swift */; };
+		054C0C2F21A6E287005E8DE5 /* WhereIsMyAdvisorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C0C2E21A6E287005E8DE5 /* WhereIsMyAdvisorViewController.swift */; };
 		057C2C3021A5D26E00221B22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C2C2F21A5D26E00221B22 /* AppDelegate.swift */; };
 		057C2C3221A5D26E00221B22 /* FirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C2C3121A5D26E00221B22 /* FirebaseViewController.swift */; };
 		057C2C3521A5D26E00221B22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057C2C3321A5D26E00221B22 /* Main.storyboard */; };
@@ -26,7 +26,7 @@
 
 /* Begin PBXFileReference section */
 		054C0C2C21A6E1DD005E8DE5 /* SeeReservationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeReservationsViewController.swift; sourceTree = "<group>"; };
-		054C0C2E21A6E287005E8DE5 /* RestaurantMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMapViewController.swift; sourceTree = "<group>"; };
+		054C0C2E21A6E287005E8DE5 /* WhereIsMyAdvisorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereIsMyAdvisorViewController.swift; sourceTree = "<group>"; };
 		057C2C2C21A5D26E00221B22 /* InClassExercisesStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InClassExercisesStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		057C2C2F21A5D26E00221B22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		057C2C3121A5D26E00221B22 /* FirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewController.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				0587C33321A6DC2B009A18E4 /* MenuTableViewController.swift */,
 				0587C33521A6DD57009A18E4 /* LoginViewController.swift */,
 				0587C33921A6DF75009A18E4 /* MakeReservationViewController.swift */,
-				054C0C2E21A6E287005E8DE5 /* RestaurantMapViewController.swift */,
+				054C0C2E21A6E287005E8DE5 /* WhereIsMyAdvisorViewController.swift */,
 				054C0C2C21A6E1DD005E8DE5 /* SeeReservationsViewController.swift */,
 				053F392B21A6CEB6001EA763 /* Example Viiew Controllers */,
 				057C2C2F21A5D26E00221B22 /* AppDelegate.swift */,
@@ -265,7 +265,7 @@
 				057C2C3221A5D26E00221B22 /* FirebaseViewController.swift in Sources */,
 				05EB5DF821A5E32800D9CE24 /* MapViewController.swift in Sources */,
 				0587C33421A6DC2B009A18E4 /* MenuTableViewController.swift in Sources */,
-				054C0C2F21A6E287005E8DE5 /* RestaurantMapViewController.swift in Sources */,
+				054C0C2F21A6E287005E8DE5 /* WhereIsMyAdvisorViewController.swift in Sources */,
 				057C2C3021A5D26E00221B22 /* AppDelegate.swift in Sources */,
 				054C0C2D21A6E1DD005E8DE5 /* SeeReservationsViewController.swift in Sources */,
 				0587C33A21A6DF75009A18E4 /* MakeReservationViewController.swift in Sources */,
